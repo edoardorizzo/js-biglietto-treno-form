@@ -47,15 +47,3 @@ submitButton.addEventListener('click',function() {
     document.getElementById("cp").innerHTML = Math.floor(Math.random() * 10000);
     document.getElementById('ticketPrice').innerHTML = parseFloat(ticketPrice).toFixed();
 })
-
-
-
-
-
-
-
-
-
-
-// // Mostra il prezzo finale
-// document.getElementById('demo').innerHTML = ("Il prezzo del tuo biglietto è di €" + totalPrice.toFixed(2));
