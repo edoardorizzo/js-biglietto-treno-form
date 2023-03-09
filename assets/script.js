@@ -25,10 +25,12 @@ submitButton.addEventListener('click',function() {
     console.log(totalPrice);
 
     // calcola la percentuale di sconto
+    let discount = 1;
+
     if (age == 'under') {
         discount =  0.2; // Sconto del 20%
     } else if (age == 'over') {
-         discount = 0.4; // Sconto del 40%
+        discount = 0.4; // Sconto del 40%
     }
 
     // Applica lo sconto per i minorenni e gli over 65
@@ -39,7 +41,7 @@ submitButton.addEventListener('click',function() {
     console.log(ticketPrice); //totale del biglietto
 
     // sovrascrivi l'HTML con i dati inseriti
-    let tipology = ('Biglietto Standard')
+    let tipology = 'Biglietto Standard';
 
     document.getElementById('userName').innerHTML = (userNameInput.value);
     document.getElementById('offerta').innerHTML = (tipology);
