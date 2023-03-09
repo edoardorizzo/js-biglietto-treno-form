@@ -37,6 +37,15 @@ submitButton.addEventListener('click',function() {
 
     let ticketPrice = totalPrice - totalDiscount;
     console.log(ticketPrice); //totale del biglietto
+
+    // sovrascrivi l'HTML con i dati inseriti
+    let tipology = ('Biglietto Standard')
+
+    document.getElementById('userName').innerHTML = (userNameInput.value);
+    document.getElementById('offerta').innerHTML = (tipology);
+    document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 100);
+    document.getElementById("cp").innerHTML = Math.floor(Math.random() * 10000);
+    document.getElementById('ticketPrice').innerHTML = parseFloat(ticketPrice).toFixed();
 })
 
 

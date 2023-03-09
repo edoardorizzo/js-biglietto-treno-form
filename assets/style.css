@@ -40,7 +40,11 @@ h3{
     border-color: rgb(206, 34, 34);
 }
 
+.table-primary {
+    --bs-table-bg: none;
+    --bs-table-border-color: none;
+}
+
 th{
-    margin: 24px;
-    display: inline-block;
+    color:  rgb(206, 34, 34);
 }
