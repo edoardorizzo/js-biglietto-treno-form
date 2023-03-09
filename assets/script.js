@@ -4,43 +4,48 @@ il prezzo del biglietto è definito in base ai km (0.21 € al km)
 va applicato uno sconto del 20% per i minorenni
 va applicato uno sconto del 40% per gli over 65. */
 
-// Chiedi all'utente i km da percorrere e l'età
 const submitButton = document.getElementById('submit-button');
 submitButton.addEventListener('click',function() {
+    // Chiedi all'utente il Nome e cognome, i km da percorrere e l'età
     let userNameInput = document.getElementById('name');
     let kmInput = (document.getElementById('km'));
     let ageInput = document.getElementById('eta');
 
+    // Associa i dati inseriti alle variabili
     let userName = userNameInput.value;
     let km = kmInput.value;
     let age = ageInput.value;
 
     console.log(userName, km, age);
+
+    // Calcola il prezzo del biglietto
+    const pricePerKm = 0.21;
+    let totalPrice = km * pricePerKm;
+
+    console.log(totalPrice);
+
+    // calcola la percentuale di sconto
+    if (age == 'under') {
+        discount =  0.2; // Sconto del 20%
+    } else if (age == 'over') {
+         discount = 0.4; // Sconto del 40%
+    }
+
+    // Applica lo sconto per i minorenni e gli over 65
+    let totalDiscount = totalPrice * discount;
+    console.log(totalDiscount); //totale dello sconto
+
+    let ticketPrice = totalPrice - totalDiscount;
+    console.log(ticketPrice); //totale del biglietto
 })
 
-let userAge = document.getElementById('eta')
-let kmToDo = document.getElementById('km')
-console.log('userAge', 'kmToDo');
-    
 
-// Calcola il prezzo del biglietto
-const pricePerKm = 0.21;
-let totalPrice = kmToDo * pricePerKm;
-console.log(totalPrice);
 
-// Applica lo sconto per i minorenni e gli over 65
 
- if (userAge == document.getElementById('under')) {
-  discount =  0.2; // Sconto del 20%
-} else if (userAge == document.getElementById('over')) {
-  discount = 0.4; // Sconto del 40%
-}
 
-// let totalDiscount = totalPrice * discount;
-// console.log(totalDiscount);
 
-// let ticketPrice = totalPrice - totalDiscount;
-// console.log(ticketPrice);
+
+
 
 
 // // Mostra il prezzo finale
