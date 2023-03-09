@@ -11,54 +11,55 @@
 <body>
 
     <div class="container-fluid vh-100">
-        <div class="row text-center p-5">
-            <div class="priceCalc p-4 m-4 rounded-4">
-                <img class="logo mb-4" src="./assets/img/logo.png" alt="">
-                <h3 class="mb-4">Calcola il prezzo del tuo biglietto</h3>
-                <section class="dates">
-                    <div class="form">
-                        <input placeholder="Nome e Cognome" class="input" type="text" name="Nome e Cognome" id="name">
-                        <input placeholder="Tragitto in Km" class="input" type="text" name="Km da percorrere" id="km">
-                        <select class="input" name="eta" id="eta">
-                            <option value="under">Meno di 18 anni</option>
-                            <option value="between">Da 18 a 64 anni</option>
-                            <option value="over">65 anni o più</option>
-                        </select>
-                        <div class="buttons mt-4">
-                            <input class="primary_btn p-1 rounded-2 border-0" type="button" value="Genera" id="submit-button">
-                            <input class="secondary_btn p-1 rounded-2 border-1" type="button" value="Reset" id="submit-button">
+        <div class="container-md">
+            <div class="row text-center p-5">
+                <div class="priceCalc p-4 m-4 rounded-4">
+                    <img class="logo mb-4" src="./assets/img/logo.png" alt="">
+                    <h3 class="mb-4">Calcola il prezzo del tuo biglietto</h3>
+                    <section class="dates">
+                        <div class="form">
+                            <input placeholder="Nome e Cognome" class="input" type="text" name="Nome e Cognome" id="name">
+                            <input placeholder="Tragitto in Km" class="input" type="text" name="Km da percorrere" id="km">
+                            <select class="input" name="eta" id="eta">
+                                <option value="under">Meno di 18 anni</option>
+                                <option value="between">Da 18 a 64 anni</option>
+                                <option value="over">65 anni o più</option>
+                            </select>
+                            <div class="buttons mt-4">
+                                <input class="primary_btn p-1 rounded-2 border-0" type="button" value="Genera" id="submit-button">
+                                <input class="secondary_btn p-1 rounded-2 border-1" type="button" value="Reset" id="submit-button">
+                            </div>
+                            
                         </div>
-                        
-                    </div>
-                </section>
-            </div> 
-            <div class="priceCalc p-4 m-4 rounded-4">
-                <h4 class="mb-4">Ecco il tuo bilgietto</h4>
-                <div class="table-responsive">
-                    <table class="table table-primary text-start border-0">
-                        <thead>
-                            <tr>
-                                <th>Nome Passeggero</th>
-                                <th>Offerta</th>
-                                <th>Carrozza</th>
-                                <th>Codice CP</th>
-                                <th>Costo Biglietto</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="border-0" id="userName"></td>
-                                <td class="border-0" id="offerta"></td>
-                                <td class="border-0" id="carrozza"></td>
-                                <td class="border-0" id="cp"></td>
-                                <td class="border-0" id="ticketPrice"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>      
-            </div> 
+                    </section>
+                </div> 
+                <div class="priceCalc p-4 m-4 rounded-4">
+                    <h4 class="mb-4">Ecco il tuo bilgietto</h4>
+                    <div class="table-responsive">
+                        <table class="table table-primary text-start border-0">
+                            <thead>
+                                <tr>
+                                    <th>Nome Passeggero</th>
+                                    <th>Offerta</th>
+                                    <th>Carrozza</th>
+                                    <th>Codice CP</th>
+                                    <th>Costo Biglietto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border-0" id="userName"></td>
+                                    <td class="border-0" id="offerta"></td>
+                                    <td class="border-0" id="carrozza"></td>
+                                    <td class="border-0" id="cp"></td>
+                                    <td class="border-0" id="ticketPrice"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>      
+                </div> 
+            </div>
         </div>
-                 
     </div>
 
     
