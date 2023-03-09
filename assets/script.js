@@ -8,7 +8,7 @@ const submitButton = document.getElementById('submit-button');
 submitButton.addEventListener('click',function() {
     // Chiedi all'utente il Nome e cognome, i km da percorrere e l'età
     let userNameInput = document.getElementById('name');
-    let kmInput = (document.getElementById('km'));
+    let kmInput = document.getElementById('km');
     let ageInput = document.getElementById('eta');
 
     // Associa i dati inseriti alle variabili
@@ -48,4 +48,16 @@ submitButton.addEventListener('click',function() {
     document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 100);
     document.getElementById("cp").innerHTML = Math.floor(Math.random() * 10000);
     document.getElementById('ticketPrice').innerHTML = parseFloat(ticketPrice).toFixed();
+});
+
+let clearButton = document.getElementById('clear-button');
+clearButton.addEventListener ('click',function() {
+    document.getElementById('name').value = '';
+  document.getElementById('km').value = '';
+  document.getElementById('eta').value = '';
+  document.getElementById('userName').innerHTML = '';
+  document.getElementById('offerta').innerHTML = '';
+  document.getElementById('carrozza').innerHTML = '';
+  document.getElementById('cp').innerHTML = '';
+  document.getElementById('ticketPrice').innerHTML = '';
 })
