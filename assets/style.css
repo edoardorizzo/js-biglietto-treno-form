@@ -4,12 +4,21 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Poppins;
+}
+
 .container-fluid {
     background-image: url(./img/trenit.jpeg);
 }
 
 .priceCalc{
     background-color: white;
+    filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.298));
+}
+
+h3{
+    color: rgb(206, 34, 34);
 }
 
 .input{
@@ -29,4 +38,9 @@
     background-color: white;
     color: rgb(206, 34, 34);
     border-color: rgb(206, 34, 34);
+}
+
+th{
+    margin: 24px;
+    display: inline-block;
 }
