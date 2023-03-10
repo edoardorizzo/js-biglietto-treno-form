@@ -53,11 +53,11 @@ submitButton.addEventListener('click',function() {
 let clearButton = document.getElementById('clear-button');
 clearButton.addEventListener ('click',function() {
     document.getElementById('name').value = '';
-  document.getElementById('km').value = '';
-  document.getElementById('eta').value = '';
-  document.getElementById('userName').innerHTML = '';
-  document.getElementById('offerta').innerHTML = '';
-  document.getElementById('carrozza').innerHTML = '';
-  document.getElementById('cp').innerHTML = '';
-  document.getElementById('ticketPrice').innerHTML = '';
+    document.getElementById('km').value = '';
+    document.getElementById('eta').value = '';
+    document.getElementById('userName').innerHTML = '';
+    document.getElementById('offerta').innerHTML = '';
+    document.getElementById('carrozza').innerHTML = '';
+    document.getElementById('cp').innerHTML = '';
+    document.getElementById('ticketPrice').innerHTML = '';
 })
